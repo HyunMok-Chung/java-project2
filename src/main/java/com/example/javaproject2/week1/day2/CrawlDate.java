@@ -1,4 +1,4 @@
-package com.example.javaproject2;
+package com.example.javaproject2.week1.day2;
 
 import java.time.LocalDateTime;
 
