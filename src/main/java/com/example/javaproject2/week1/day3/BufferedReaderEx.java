@@ -1,4 +1,4 @@
-package com.example.javaproject2.week1;
+package com.example.javaproject2.week1.day3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
