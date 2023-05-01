@@ -3,16 +3,30 @@ package com.example.javaproject2.programmers;
 public class ConnectedNumber {
     public static int solution(int[] num_list) {
         int answer = 0;
-        String even = "";
-        String odd = "";
-        for(int i=0;i<num_list.length;i++){
-            if(num_list[i] % 2 == 0){
-                even += String.valueOf(num_list[i]);
-            }else{
-                odd += String.valueOf(num_list[i]);
+//        String even = "";
+//        String odd = "";
+//        for(int i=0;i<num_list.length;i++){
+//            if(num_list[i] % 2 == 0){
+//                even += String.valueOf(num_list[i]);
+//            }else{
+//                odd += String.valueOf(num_list[i]);
+//            }
+//        }
+//        answer = Integer.parseInt(even) + Integer.parseInt(odd);
+        int odd = 0;
+        int even = 0;
+
+        for(int i = 0;i < num_list.length;i++){
+            if(num_list[i] % 2 == 0) {
+                even *= 10;
+                even += num_list[i];
+            }
+            else {
+                odd *= 10;
+                odd += num_list[i];
             }
         }
-        answer = Integer.parseInt(even) + Integer.parseInt(odd);
+        answer = even + odd;
         return answer;
     }
 
