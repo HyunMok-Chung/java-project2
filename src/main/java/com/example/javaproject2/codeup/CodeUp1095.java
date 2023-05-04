@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class CodeUp1095 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int n = sc.nextInt();
         int[] student = new int[n];
+
         for (int i=0; i<n; i++)
             student[i] = sc.nextInt();
 
@@ -15,6 +17,7 @@ public class CodeUp1095 {
             if (min_value > student[i])
                 min_value = student[i];
         }
+
         System.out.println(min_value);
     }
 }
