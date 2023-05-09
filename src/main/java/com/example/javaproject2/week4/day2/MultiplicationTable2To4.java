@@ -1,15 +1,25 @@
 package com.example.javaproject2.week4.day2;
 
 public class MultiplicationTable2To4 {
-    public static void printMultiplicationTable(int ofN) {
+    private String multipleSymbol;
+
+    public MultiplicationTable2To4(String multipleSymbol) {
+        this.multipleSymbol = multipleSymbol;
+    }
+
+    // x
+    public void printMultiplicationTable(int ofN) {
         for (int i = 1; i <= 9; i++) {
-            System.out.printf("%d * %d = %d\n",ofN, i, ofN * i);
+            System.out.printf("%d %s %d = %d\n", ofN, multipleSymbol, i, ofN * i);
         }
+        System.out.println("--------------");
     }
     public static void main(String[] args) {
-        printMultiplicationTable(2);
-        printMultiplicationTable(4);
-        printMultiplicationTable(7);
-        printMultiplicationTable(9);
+        MultiplicationTable2To4 mt = new MultiplicationTable2To4("x");
+        mt.printMultiplicationTable(2);
+        mt.printMultiplicationTable(4);
+        MultiplicationTable2To4 mt2 = new MultiplicationTable2To4("*");
+        mt2.printMultiplicationTable(7);
+        mt2.printMultiplicationTable(9);
     }
 }
