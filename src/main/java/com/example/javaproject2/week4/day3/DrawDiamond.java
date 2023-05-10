@@ -12,11 +12,11 @@ public class DrawDiamond {
                 // 피라미드 로직
                 // 초항이 3 등차가 -2
 //                System.out.printf("pivot: %d, %d, %d, %d\n", pivot, i, -2 + h - i - 2, 2 * i + 1);
-                System.out.printf("%s%s\n", getRepeatedSymbol("0", -2 + h - i - 2), getRepeatedSymbol("*", 2 * i + 1));
+                System.out.printf("%s%s\n", getRepeatedSymbol(" ", -2 + h - i - 2), getRepeatedSymbol("*", 2 * i + 1));
             } else {
                 // 역피라미드 로직
 //                System.out.printf("pivot: %d, %d, %d, %d\n", pivot, i, i - pivot, 2 * (h - i) - 1);
-                System.out.printf("%s%s\n", getRepeatedSymbol("0", i - pivot), getRepeatedSymbol("*", 2 * (h - i) - 1));
+                System.out.printf("%s%s\n", getRepeatedSymbol(" ", i - pivot), getRepeatedSymbol("*", 2 * (h - i) - 1));
             }
         }
     }
