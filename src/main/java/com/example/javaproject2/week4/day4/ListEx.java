@@ -15,5 +15,13 @@ public class ListEx {
         l1.remove(0);
         l1.remove(0);
         System.out.println(l1.isEmpty());
+
+        //li.remove(0);
+        //li.remove(0);
+        //System.out.println(li.isEmpty());
+
+        for (var item : l1) {
+            System.out.println(item);
+        }
     }
 }
