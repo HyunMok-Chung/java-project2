@@ -21,6 +21,7 @@ public class BubbleSort2 {
             }
         }
         return arr;
+
     }
     public static void main(String[] args) {
         BubbleSort2 bubbleSort2 = new BubbleSort2(new Comparator<Integer>() {
