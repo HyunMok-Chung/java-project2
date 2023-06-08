@@ -3,7 +3,7 @@ package com.example.javaproject2.week6.day5;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class MainEx {
     public static <T> T getFirstItem(List<T> list) {
         if (list.isEmpty()) {
             return null;
