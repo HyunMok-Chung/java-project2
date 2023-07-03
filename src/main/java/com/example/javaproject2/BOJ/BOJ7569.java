@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class BOJ7569 {  // 토마토
+public class BOJ7569 {  //  2023.07.03(월) 토마토 BFS
     // x 의 변화
     private final int[] dx = {-1, 1, 0, 0, 0, 0};
     // y 의 변화
@@ -48,6 +48,7 @@ public class BOJ7569 {  // 토마토
                         // 이미 익은 토마토들 부터 시작
                         toVisit.add(new int[]{i, j, k, 0});
                     }
+                    tomatoRack[i][j][k] = tomato;
                 }
             }
         }
@@ -64,8 +65,8 @@ public class BOJ7569 {  // 토마토
             for (int i = 0; i < 6; i++) {
                 // 다음 확인 좌표
                 int nextH = tomato[0] + dh[i];
-                int nextY = tomato[0] + dy[i];
-                int nextX = tomato[0] + dx[i];
+                int nextY = tomato[1] + dy[i];
+                int nextX = tomato[2] + dx[i];
                 if (
                     // 1. 영역을 벗어나지 않는다
                         checkBounds(nextX, nextY, nextH)
