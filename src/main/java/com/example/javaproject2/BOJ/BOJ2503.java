@@ -75,6 +75,6 @@ public class BOJ2503 {
     }
 
     public static void main(String[] args) throws IOException {
-        System.out.println(new Num().solution());
+        System.out.println(new BOJ2503().solution());
     }
 }

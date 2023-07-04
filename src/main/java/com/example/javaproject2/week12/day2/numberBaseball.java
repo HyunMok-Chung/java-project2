@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class NumberBaseball {
+public class numberBaseball {
     public int solution() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = null;
@@ -75,6 +75,6 @@ public class NumberBaseball {
     }
 
     public static void main(String[] args) throws IOException {
-        System.out.println(new NumberBaseball().solution());
+        System.out.println(new numberBaseball().solution());
     }
 }
