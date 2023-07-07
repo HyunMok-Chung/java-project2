@@ -1,7 +1,6 @@
 package com.example.javaproject2.week12.day5;
 
 import java.util.ArrayList;
-import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 // 비트연산을 활용한 부분집합 만들기
